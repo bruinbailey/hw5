@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ActiveCourseService } from './models/active-course.service';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +6,4 @@ import { ActiveCourseService } from './models/active-course.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private activeCourseService: ActiveCourseService) { }
-  model: string;
-
-  onChange() {
-	  this.setActive(this.model || 'P422');
-  }
-
-  setActive(course: string) {
-	  this.activeCourseService.setCourse(course);
-  }
 }
