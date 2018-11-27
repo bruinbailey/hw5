@@ -13,6 +13,7 @@ import { AssignmentDetailComponent } from './assignment-detail/assignment-detail
 import { CourseSelectionComponent } from './course-selection/course-selection.component';
 import { SectionSelectorComponent } from './section-selector/section-selector.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { AssignmentDataServiceComponent } from './assignment-data-service/assignment-data-service.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HomepageComponent } from './homepage/homepage.component';
     AssignmentDetailComponent,
     CourseSelectionComponent,
     SectionSelectorComponent,
-    HomepageComponent
+    HomepageComponent,
+    AssignmentDataServiceComponent
   ],
   imports: [
     BrowserModule,
