@@ -1,4 +1,4 @@
-export class Assignments {
+export class Assignment {
     name: string
     section: string
     description: string
