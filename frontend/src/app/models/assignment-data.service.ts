@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Course } from './Course';
 import { HttpClient }    from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Assignment } from './Assignments';
@@ -22,7 +21,7 @@ export class AssignmentDataService {
   }
 
   submitAssignment(section: string, name: string, sub: Submission): Observable<any> {
-    return this.http.post<Submission>(`${this.url}/${section}/assignments/${name}`, sub);
+    return this.http.post<Submission>(`${this.url}/${section}/assignments/${name}/grades`, sub);
   }
 
 }
