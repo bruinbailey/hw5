@@ -20,7 +20,7 @@ export class AssignmentDataService {
     return this.http.get<Assignment>(`${this.url}/${section}/assignments/${name}`);
   }
 
-  submitAssignment(section: string, name: string, sub: Submission): Observable<any> {
+  submitAssignment(section: String, name: String, sub: Submission): Observable<any> {
     return this.http.post<Submission>(`${this.url}/${section}/assignments/${name}/grades`, sub);
   }
 

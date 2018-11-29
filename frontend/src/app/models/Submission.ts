@@ -1,7 +1,15 @@
 export class Submission {
-    assignment: {name: string, section: string, submitter: string}
-    fileName: string
-    text: string
-    submittedDate: string
+    assignment: {name: String, section: String, submitter: String}
+    fileName: String
+    text: String
+    submittedDate: String
     grade: Number
+
+    constructor() {
+        this.assignment = {
+            name: '',
+            section: '',
+            submitter: '',
+        }
+    }
 }
